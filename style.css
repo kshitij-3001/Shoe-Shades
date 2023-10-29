@@ -15,12 +15,12 @@ body{
 }
 .product-card {
   position: relative;
-  max-width: 355px;
+  max-width: 400px;
   width: 100%;
-  border-radius: 25px;
+  border-radius: 20px;
   padding: 20px 30px 30px 30px;
   background: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
   z-index: 3;
   overflow: hidden;
 }
@@ -46,6 +46,7 @@ body{
 .product-card .main-images{
   position: relative;
   height: 210px;
+  transform: scale(0.5);
 }
 .product-card .main-images img{
   position: absolute;
@@ -58,6 +59,7 @@ body{
   z-index: -1;
   opacity: 0;
   transition: opacity 0.5s ease;
+  transform: scale(1.5);
 }
 .product-card .main-images img.active{
   opacity: 1;
@@ -85,11 +87,11 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 11px;
 }
 .color-price .color-option .color{
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   color: #333;
   margin-right: 8px;
 }
@@ -103,7 +105,7 @@ body{
   border-radius: 50%;
   margin: 0 4px;
   cursor: pointer;
-  transition: all 0.4s ease;
+  transition: all 0.8s ease;
 }
 .color-option  .circles .circle.blue.active{
   box-shadow: 0 0 0 2px #fff,
